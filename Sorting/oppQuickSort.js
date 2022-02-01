@@ -1,5 +1,5 @@
 
-let arr = [2, 3, 1, 4, 5];
+let arr = [2, 3, 1, 4, 5,7,12,3,2,1];
 console.log(oppQuickSort(arr).join(" "));
 
 
