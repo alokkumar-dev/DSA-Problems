@@ -5,7 +5,7 @@ const LinkedListNode = class {
         this.next = null;
     }
 };
-// Complete the function below
+// Complete the function below for cycle
 var hasCycle = function(head) {
     let temp = new LinkedListNode(head);
     while (head != null){
