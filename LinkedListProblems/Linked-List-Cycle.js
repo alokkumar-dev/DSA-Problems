@@ -1,4 +1,3 @@
-
 const LinkedListNode = class {
     constructor(nodeData) {
         this.data = nodeData;
