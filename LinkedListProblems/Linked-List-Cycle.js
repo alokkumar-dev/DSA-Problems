@@ -12,8 +12,7 @@ var hasCycle = function(head) {
         if (head.next == null){
             return false;
         }
-        if (head.next == temp)
-        {
+        if (head.next == temp){
             return true;
         }
         let next = head.next;
