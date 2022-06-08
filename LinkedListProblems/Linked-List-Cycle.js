@@ -1,19 +1,17 @@
-
 const LinkedListNode = class {
     constructor(nodeData) {
         this.data = nodeData;
         this.next = null;
     }
 };
-// Complete the function below
+// Complete the function below for cycle
 var hasCycle = function(head) {
     let temp = new LinkedListNode(head);
     while (head != null){
         if (head.next == null){
             return false;
         }
-        if (head.next == temp)
-        {
+        if (head.next == temp){
             return true;
         }
         let next = head.next;
