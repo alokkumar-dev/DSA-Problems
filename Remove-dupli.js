@@ -1,18 +1,18 @@
-function dupli(arr){
-    let ans ={};
-    for(let i=0; i<arr.length; i++){
-        if(ans[arr[i]]==undefined){
-            ans[arr[i]]=1;
-        }else{
-            ans[arr[i]]++;
-        }
+function dupliVal(arr) {
+  let obj = {};
+  for (let i = 0; i < arr.length; i++) {
+    if (obj[arr[i]] == undefined) {
+      obj[arr[i]] = 1;
+    } else {
+      obj[arr[i]]++;
     }
-    let res = [];
-    for( x in ans){
-        res.push(x);
-    }
-    console.log(res.join(" "));
+  }
+
+  for (let x in obj) {
+    console.log(x);
+  }
 }
 
-let arr = [1,2,4,5,4,3,2,5,6,7,8,9];
-dupli(arr);
+let arr = [2, 3, 2, 4, 5, 6, 2, 3, 7, 8, 9];
+
+dupliVal(arr);
